@@ -5,7 +5,7 @@ ul {
     padding: 0;
     overflow: hidden;
     border: 1px solid #e7e7e7;
-    background-color: #f3f3f3;
+    background-color: white;
   }
   
   li {
@@ -21,10 +21,16 @@ ul {
   }
   
   li a:hover:not(.active) {
-    background-color: #ddd;
+    color: white;
+    background-color: cadetblue;
   }
   
   li a.active {
     color: white;
     background-color: #4CAF50;
+  }
+
+  .Sign-up {
+    color: white;
+    background-color: rgb(0, 134, 90);
   }
