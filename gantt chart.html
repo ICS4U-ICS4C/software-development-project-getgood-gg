@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title> GANNT CHART</title>
+        <script type= "text/javascript" src="https://ww.gstatic.com/charts/loader.js"></script>
+        <script type= "text/javascript">
+            google.charts,load('current', {'packages': [ 'gantt']});
+            google.charts.setOnLoaCallback(drawChart);
+
+
+        function daysToMilliseconds(days) {
+            return days * 24 * 60 * 60 * 1000;
+    
+        }
+        function drawChart(){
+            var data = new google.visulization.DataTable();
+            
+            data.addColumn('string', 'Task ID');
+            data.addColumn('string', 'Task Name');
+            data.addColumn('Date', 'Start Date');
+            data.addColumn('Date', 'End Date');
+            data.addColumn('number', 'Duration');
+            data.addColumn('number', 'Percent Comlete');
+            data.addColumn('string', 'dependencies');
+
+            data.addRows([
+                [ 'Research' , 'Find Sources',
+                new Date(2015, 0, 1), new Date(2015, 0, 5), null, 100, null]
+                ['write', 'write Paper',
+                null, new Date(2015, 0, 9), daysToMilliseconds(3), 25, 'Research,Outline'],
+                ['cite', 'Create Biliography',
+                null , new Date(2015, 0, 7), daysToMilliseconds(1), 20, 'Research'],
+                ['complete', 'Hand in paper',
+                null , new Date(2015, 0, 10), daysToMilliseconds(1), 0, 'Cite, Write'],
+                ['Outline', 'Outline Paper',
+                null , new Date(2015, 0, 6), daysToMilliseconds(1), 100, 'Research']
+
+            ]);
+
+            var options = {
+                height: 275
+
+            };
+
+            var chart = new  new google.visualization.Gantt9(document,getElementById('chart_div'));
+
+            chart.draw(data, options);
+
+        }
+        </script>
+
+        
+    </head>
+    <body>
+        <div id="chart_div"></div>
+    </body>
+</html>
