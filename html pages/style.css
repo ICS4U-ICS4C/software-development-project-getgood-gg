@@ -73,6 +73,16 @@ nav a:hover::before {
 }
 
 
+
+
+
+
+h3 {
+position: static;
+top: 520px
+}
+
+
 title {
   position: absolute;
   top: 250px;
@@ -82,6 +92,7 @@ title {
 .box {
   position: relative;
 }
+
 
 ul {
     list-style-type: none;
