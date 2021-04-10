@@ -14,17 +14,17 @@
 .gametitle {
   position: absolute;
   top: 720px;
-  left: 620px;
+  left: 760px;
   font-size: 20px;
   color:whitesmoke;
 }
 
 .icons {
   position: absolute;
-  left: 420px;
+  left: 600px;
   width: 800px; 
   height: 160px;
-  top: 960px;
+  top: 980px;
 
 }
 
