@@ -11,6 +11,7 @@ var displayMediaOptions = {
   video: {
     cursor: "always"
   },
+  // Boolean value on whether to capture audio or not, true = audio false = no audio
   audio: false
 };
 
@@ -22,18 +23,19 @@ startElem.addEventListener("click", function(evt) {
 stopElem.addEventListener("click", function(evt) {
   stopCapture();
 }, false);
-
+// Function to start the stream and prompt the user to select windows
 async function startCapture(displayMediaOptions) {
     let captureStream = null;
   
     try {
       captureStream = await navigator.mediaDevices.getDisplayMedia(displayMediaOptions);
     } catch(err) {
+      // Error logging method
       console.error("Error: " + err);
     }
     return captureStream;
   }
-
+// Function to stop the stream
   function stopCapture(evt) {
     let tracks = videoElem.srcObject.getTracks();
   
