@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -83,4 +83,15 @@ nav a:hover::before {
     border: 1px solid #999;
     width: 98%;
     max-width: 860px;
+}
+
+button {
+  background: black;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px gold,
+              0 0 25px gold,
+              0 0 50px gold,
+              0 0 100px gold;
+  
 }
