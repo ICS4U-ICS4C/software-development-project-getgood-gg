@@ -1,3 +1,5 @@
+
+// Variables to grab video, start, stop, and log from HTML file
 const videoElem = document.getElementById("video");
 const logElem = document.getElementById("log");
 const startElem = document.getElementById("start");
