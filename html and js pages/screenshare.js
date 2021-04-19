@@ -11,6 +11,7 @@ var displayMediaOptions = {
   video: {
     cursor: "always"
   },
+  // Boolean value on whether to capture audio or not, true = audio false = no audio
   audio: false
 };
 
