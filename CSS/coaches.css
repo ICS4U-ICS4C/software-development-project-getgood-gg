@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
 
+.websitetitle {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  font-size: 120px;
+  color:whitesmoke;
+}
+
 body {
 	margin: 0;
 	background: rgb(41, 39, 39);
@@ -8,12 +17,12 @@ body {
 }
 
 .container {
-	width: 100%;
+    width: 80%;
 	margin: 0 auto;
 }
 
 header {
-  background: #201f1f;
+    background: #201f1f;
 }
 
 header::after {
@@ -30,7 +39,7 @@ header::after {
 }
 
 nav {
-  float: left;
+  float: right;
 }
 
 nav ul {
@@ -75,23 +84,3 @@ nav a:hover::before {
   width: 100%;
 }
 
-#logo {
-    float: right;
-}
-
-#video {
-    border: 1px solid #999;
-    width: 98%;
-    max-width: 860px;
-}
-
-button {
-  background: black;
-  color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 5px gold,
-              0 0 25px gold,
-              0 0 50px gold,
-              0 0 100px gold;
-  
-}

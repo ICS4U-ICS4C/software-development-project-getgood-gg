@@ -84,3 +84,28 @@ nav a:hover::before {
   width: 100%;
 }
 
+
+
+#logo {
+    float: right;
+}
+
+#video {
+    position: absolute;
+    border: 1px solid #999;
+    width: 98%;
+    max-width: 860px;
+}
+
+button {
+  bottom: 300px;
+  background: black;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px gold,
+              0 0 25px gold,
+              0 0 50px gold,
+              0 0 100px gold;
+  
+}
+
