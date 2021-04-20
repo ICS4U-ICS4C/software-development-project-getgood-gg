@@ -2,4 +2,4 @@
 
 Our website can be accessed through this link: https://ics4u-ics4c.github.io/software-development-project-getgood-gg/
 
-Here is a link to our report:
+Here is a link to our report:https://compsci-1.gitbook.io/getgood-gg/
